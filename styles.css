@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.intro,
+.end {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 6rem;
+  padding: 10rem;
+  box-sizing: border-box;
+}
+
+.intro p,
+.end a {
+  font-size: 3rem;
+}
+
+.end {
+  margin-top: 100vh;
+}
+
+.showcase {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.phone-part {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  font-size: 3rem;
+}
+
+.phone-part .color-titles {
+  position: absolute;
+  left: 50%;
+  top: 20vh;
+  transform: translate(-50%, 0);
+  font-size: 3.8rem;
+}
+
+.black-part {
+  background-color: #000;
+  z-index: 1;
+}
+
+.black-part .color-titles .black-title {
+  color: #f5f5f7;
+}
+
+.white-part {
+  background-color: #f2f2f2;
+  z-index: 2;
+  clip-path: inset(100% 0px 0px);
+}
+
+.white-part .color-titles .black-title {
+  color: #8b8b99;
+}
+.white-part .color-titles .white-title {
+  color: #000;
+}
+
+.red-part {
+  background-color: #960919;
+  height: 200vh;
+  z-index: 3;
+  clip-path: inset(100% 0px 0px);
+}
+
+.red-part .color-titles .black-title,
+.red-part .color-titles .white-title {
+  color: #e57571;
+}
+
+.red-part .color-titles .white-title {
+  display: inline;
+}
+.red-part .color-titles .red-title {
+  color: #f5f5f7;
+  display: inline;
+}
+
+.phone-part img {
+  width: calc(20rem + 20vw);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50vh);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .white-part .color-titles .black-title,
+  .white-part .color-titles .white-title,
+  .red-part .color-titles .black-title,
+  .red-part .color-titles .white-title {
+    display: inline;
+  }
+  .red-part .color-titles .red-title {
+    display: block;
+  }
+  .phone-part .color-titles {
+    top: 10vh;
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .phone-part .color-titles {
+    width: 34rem;
+  }
+}
