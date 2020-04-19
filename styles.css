@@ -108,6 +108,8 @@ html {
 }
 
 @media only screen and (max-width: 56.25em) {
+  .black-part .color-titles .black-title,
+  .black-part .color-titles .white-title,
   .white-part .color-titles .black-title,
   .white-part .color-titles .white-title,
   .red-part .color-titles .black-title,
