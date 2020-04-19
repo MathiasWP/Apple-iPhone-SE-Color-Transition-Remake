@@ -3,12 +3,14 @@ const controller = new ScrollMagic.Controller();
 const tween = new TimelineMax()
   .add(
     TweenMax.to(document.querySelector('.white-part'), {
-      webkitClipPath: 'inset(0px 0px 0px)'
+      webkitClipPath: 'inset(0px 0px 0px)',
+      clipPath: 'inset(0px 0px 0px)'
     })
   )
   .add(
     TweenMax.to(document.querySelector('.red-part'), {
-      webkitClipPath: 'inset(0px 0px 0px)'
+      webkitClipPath: 'inset(0px 0px 0px)',
+      clipPath: 'inset(0px 0px 0px)'
     })
   );
 
