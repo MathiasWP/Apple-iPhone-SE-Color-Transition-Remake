@@ -6,7 +6,7 @@
 ## Plugins used:
 
 - **[Scrollmagic](https://scrollmagic.io/)**
-- **[TimelineMax)](https://greensock.com/docs/v2/TimelineMax)**
+- **[TimelineMax](https://greensock.com/docs/v2/TimelineMax)**
 
 &nbsp;
 
